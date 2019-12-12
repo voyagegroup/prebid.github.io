@@ -6,9 +6,9 @@ description: Setting up Native ads in both Google Ad Manager and MoPub.
 sidebarType: 2
 ---
 
-# Set Up Native
+# Setup In Banner Native Ads
 
-Prebid Mobile enables publishers to display native ads within their apps. This page provides instructions for setting up ad ops for both Google Ad Manager and MoPub.
+Prebid Mobile enables publishers to display in banner rendering native ads within their apps. This page provides instructions for setting up ad ops for both Google Ad Manager and MoPub.
 
 * TOC
 {:toc }
@@ -32,7 +32,7 @@ Follow these instructions to set up a Native ad with HTML and CSS. For more deta
       At a high level, Prebid Mobile's support for native ads works by requesting native demand from bidder adapters. The native ad responses get placed on specific keys that are sent into your ad server.  
 
       The `native-trk.js` linked in the code example below will find `hb_native_keys` and replace them with native assets. For more detailed information and a list of available keys see our documentation that explains [how Native ads work](/dev-docs/show-native-ads.html#how-native-ads-work).  
-      
+
       d. Set the targeting to default and save.
 
 5. [Create a line item](/prebid-mobile/adops-line-item-setup-dfp.html) targeting this ad unit and an `hb_pb price`; for expected creatives, put in the ad format you specified in step 4.b.
@@ -86,7 +86,7 @@ These instructions describe how to add a Native ad with the MoPub SDK. For more 
 ```
 
 {% capture noteAlert %}
-Do not to check Mraid ad.z.
+Do not to check Mraid ad.
 {% endcapture %}
 
 {% include alerts/alert_note.html content=noteAlert %}
